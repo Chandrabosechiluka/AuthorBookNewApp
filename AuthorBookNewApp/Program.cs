@@ -40,7 +40,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("FrontendConnection");
-//app.UseExceptionHandler();
+app.UseExceptionHandler(_ => { });
 app.UseAuthorization();
 
 app.MapControllers();
